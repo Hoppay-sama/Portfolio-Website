@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Website Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <audio autoplay loop> 
+        <source src="assets\videoplayback.m4a" type="audio/m4a"> 
+    </audio>
+</head>
+
+<body>
+    <nav id="NavBar">
+        <div class="Logo">Nigga</div>
+        <div>
+            <ul class="sections">
+                <li><a href="#Hero">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Works">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="burger">
+        <div class="Logo">Nigga</div>
+        <div class="menu">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li class="button"><a href="#Hero" onclick="toggleMenu()">Home</a></li>
+                <li class="button"><a href="#About" onclick="toggleMenu()">About</a></li>
+                <li class="button"><a href="#Works" onclick="toggleMenu()">Projects</a></li>
+                <li class="button"><a href="#Contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
