@@ -1,0 +1,48 @@
+@media screen and (max-width: 768px){
+    #NavBar{
+        display:none;
+    }
+
+    nav{
+        height: 80px;
+    }
+
+    #burger{
+        display: flex;
+    }
+    
+    .menu-icon.open span:nth-child(2){
+        opacity: 0;
+    }
+    .menu-icon.open span:nth-child(1){
+        transform:translateY(13.4px) rotate(45deg);
+    }
+    .menu-icon.open span:nth-child(3){
+        transform:translateY(-13.4px) rotate(-45deg);
+    }
+
+    .menu-links{
+        position: fixed;
+        left: -100%;
+        top: 11%;
+        gap: 0;
+        width: 100%;
+        flex-direction: column;
+        background-color: #6BEDFF;
+        text-align: center;
+        fill-opacity: 50%;
+        transition: 0.3s;
+    }
+
+    .menu-links.open{
+        left: 0;
+    }
+
+    .button{
+        margin: 1rem  ;
+    }
+
+    a:hover{
+        text-underline-offset: 0.4rem;
+    }
+}
