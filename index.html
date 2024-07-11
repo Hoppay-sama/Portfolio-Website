@@ -6,42 +6,73 @@
     <title>Online Website Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="mediaqueries.css">
-    <audio autoplay loop> 
-        <source src="assets\videoplayback.m4a" type="audio/m4a"> 
+    <audio id="bg" autoplay loop> 
+        <source src="assets\videoplayback.m4a" type="audio/mp3"> 
     </audio>
 </head>
 
 <body>
-    <nav id="NavBar">
-        <div class="Logo">Nigga</div>
+    <header>
+        <nav id="NavBar">
+            <div class="Logo">Nigga</div>
+            <div>
+                <ul class="sections">
+                    <li><a href="#Hero">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Works">Projects</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="burger">
+            <div class="Logo">Nigga</div>
+            <div class="menu">
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li class="button"><a href="#Hero" onclick="toggleMenu()">Home</a></li>
+                    <li class="button"><a href="#About" onclick="toggleMenu()">About</a></li>
+                    <li class="button"><a href="#Works" onclick="toggleMenu()">Projects</a></li>
+                    <li class="button"><a href="#Contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="Hero">
         <div>
-            <ul class="sections">
-                <li><a href="#Hero">Home</a></li>
-                <li><a href="#About">About</a></li>
-                <li><a href="#Works">Projects</a></li>
-                <li><a href="#Contact">Contact</a></li>
-            </ul>
+            <span class="first-name">MARC LESTER</span>
         </div>
-    </nav>
-    <nav id="burger">
-        <div class="Logo">Nigga</div>
-        <div class="menu">
-            <div class="menu-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li class="button"><a href="#Hero" onclick="toggleMenu()">Home</a></li>
-                <li class="button"><a href="#About" onclick="toggleMenu()">About</a></li>
-                <li class="button"><a href="#Works" onclick="toggleMenu()">Projects</a></li>
-                <li class="button"><a href="#Contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
+    </section>
+
+    <section id="About">
+        <div>
+            <span class="first-name">MARC LESTER</span>
         </div>
-    </nav>
-    <div>
-        
-    </div>
+    </section>
+
+    <section id="Works">
+        <div>
+            <span class="first-name">MARC LESTER</span>
+        </div>
+    </section>
+
+    <section id="Contact">
+        <div>
+            <span class="first-name">MARC LESTER</span>
+        </div>
+    </section>
+    
+    <section id="Footer">
+        <div>
+            <span class="first-name">MARC LESTER</span>
+        </div>
+    </section>
+
+
     <script src="script.js"></script>
 </body>
 </html>
