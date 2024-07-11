@@ -7,8 +7,6 @@
         height: 80px;
     }
 
-    
-
     #burger{
         display: flex;
     }
@@ -47,4 +45,6 @@
     a:hover{
         text-underline-offset: 0.4rem;
     }
+
+    
 }
