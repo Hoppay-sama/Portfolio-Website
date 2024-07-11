@@ -1,5 +1,4 @@
 /* Default */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 * {
     margin:0;
     padding:0;
@@ -15,11 +14,6 @@ html {
     scroll-behavior: smooth;
 }
 
-p {
-    z-index: 10000;
-    color: rgb(85, 85, 85);
-}
-
 /* NavBar */
 nav{
     background-color: rgba(107, 237, 255, 50%);
@@ -28,6 +22,7 @@ nav{
     height: 15vh;
     position: fixed;
     width: 100%;
+    z-index: 100000;
 }
 
 nav, .sections{
@@ -96,20 +91,130 @@ a:hover{
 }
 
 #Hero{
+    overflow:hidden;
+    display: flex;
     height: 100vh;
     background-color: #51C4F5;
 }
 
-#Hero div{
-    background-color: pink;
-    transform: translate(8vw, 30vh) rotate(-25deg);
-    width: 30vw;
+.first-name{
+    font-family: "Inter", sans-serif;
+    padding-top: 23vh;
+    padding-left: 5vw;
+    font-weight: 650;
+    font-size: 48px;
+    font-style: italic;
+}
+
+.last-name{
+    font-family: "Inter", sans-serif;
+    padding-left: 10vw;
+    font-weight: 600;
+    font-size: 38px;
+}
+
+pre{
+    padding-top: 2rem;
+    padding-left: 0.8rem;
+    font-family: "Inter", sans-serif;
+    font-size: 21px;
+    line-height: 1.5;
+}
+
+.title{
+    overflow: visible;
+    transform: translate(17vw, 10vh) rotate(-6deg);
+    font-size: 5rem;
+    white-space: nowrap;
+}
+
+.profile{
+    display: flex;
+    padding-right: 15rem; padding-bottom: 5rem; padding-top: 1rem; padding-left: 2rem;
+    background-color: #4BA1E0;
+    border-radius: 50%;
+    border:80px, solid,#6beeffb4 ;
+    width: 60rem;
+    height: 41.2rem;
+}
+
+.title span{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(60deg,black, #6beeffb4 45%,black 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color:transparent;
+    -webkit-text-stroke: 2px black;
 }
 
 #About{
+    overflow: hidden;
+    display: flex;
     height: 100vh;
     background-image: linear-gradient(to bottom left, #51C4F5 0%, #4ba2e0c4 24%, #4394cd94 47%, #0b2568b6 100%);
+}   
+
+.Person2{
+    display: flex;
+    z-index: 10000;
 }
+
+.Text{
+    margin: 9rem; margin-left: 7rem;
+}
+
+.polygon{
+    overflow: visible;
+    height: 123vh;
+    width: 55vw;
+    background-image: linear-gradient(to top,#51C4F5,#215097);
+    transform: translate(-72.7vw, -35.2vh) rotate(-160deg) skew(1deg, -20deg);
+}
+
+.about{
+    transform: translate(0.7vw, -120vh);
+}
+
+.Introduction{
+    transform: translate(-5vw, -115vh);
+    font-size: 21px;
+}
+
+.polygon1{
+    overflow: visible;
+    display: flex;
+    height: 20vh;
+    width: 64vw;
+    background-image: linear-gradient(to left,#51C4F5,#215097);
+    transform: translate(-23vw, -106vh);
+}
+
+
+a .resume{
+    height: 100%;
+    width: 25vw;
+    margin-left: 36vw;
+    background-color: #63c3fbbd;
+    transform: skew(45deg);
+}
+
+.polygon1 span{
+    display: flex;
+    background-color: black;
+}
+
+.polygon1 a:nth-child(1){
+    height: 100%;
+    background-color: transparent;
+    transform: translateX(52vw);
+    white-space: nowrap;
+    font-size: 2rem;
+    padding-top: 3.3rem;
+    z-index: 10000;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 
 #Works{
     height: 100vh;
@@ -123,4 +228,11 @@ a:hover{
 #Footer{
     height: 16vh;
     background-color: black;
+}   
+
+#Footer h3{
+    color: white;
+    font-family: "inika";
+    text-align: center;
+    padding-top: 3rem;
 }
