@@ -46,5 +46,74 @@
         text-underline-offset: 0.4rem;
     }
 
-    
+    pre{
+        font-size: small;
+    }
+
+    .title{
+        transform: rotate(0deg) translate(5vw, 17vh);
+    }
+    .title span{
+        color: black;
+        background-color: black;
+    }
+
+    .profile{
+        height: 50vh;
+        width: 50vw;
+        position: absolute;
+        border-width: 25px;
+        padding: 1rem;
+        transform: translate(55vw, 15vh);
+    }
+
+    .Person2{
+        position: absolute;
+        height: 70vh;
+        transform: translate(0vw, 30vh);
+    }
+
+    .about {
+        position: absolute;
+        height: 14vh;
+        width: 35vw;
+        transform: translate(30vw,-130vh);
+    }
+
+    .Introduction{
+        font-size: large;
+        padding-left: 25vw; padding-top: 15vh;
+    }
+
+    .polygon1{
+        padding-left: 45vw;
+        height: 18vh;
+    }
+
+    a .resume{
+        margin-left: 20vw;
+        width: 35vw;
+    }
+
+    .polygon1 a:nth-child(1){
+        padding-top: 2rem;
+        transform: translateX(45vw);
+    }
+
+    .marc{
+        overflow: hidden;
+        height: 100vh;
+        transform: translateX(-10vw);
+    }
+
+    .card{
+        height: 20vh;
+        transform: translate(-45vw, 35vh);
+    }
+
+    .contacts{
+        transform: translate(-50vw,17vh);
+        height: 20vh;
+        width: 45vw;
+    }
 }
