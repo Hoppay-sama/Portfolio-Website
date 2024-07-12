@@ -50,7 +50,8 @@ a:hover{
 }
 
 .Logo{
-    size: 2rem;
+    font-size: 3rem;
+    font-family: "Intika";
 }
 
 .Logo:hover{
